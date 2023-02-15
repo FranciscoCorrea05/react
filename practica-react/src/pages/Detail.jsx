@@ -35,20 +35,22 @@ class Detail extends Component {
     });
     return (
       <>
-        <div className=" container-fluid row align-middle mx-auto "  >
+        <div className=" container-fluid row align-middle mx-auto py-3 "  >
           <div className="col-12 col-md-4 mx-auto ">
             <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} id="movieImg" className="rounded img-thumbnail" alt="movie" />
           </div>
           <div className="col-12 col-md-8 " id="movieInfo" >
             <ul>
-              <h2>titulo:{title} </h2>
+              <h2>titulo:</h2>
+              <p>  {title}  </p>
               <h5>generos: </h5>
               <ul>
                 <li> {generos} </li>
               </ul>
               <h5> reseña:</h5>
               <p>{overview}</p>
-              <h5 id="rating">calificacion: {vote_average} </h5>
+              <h5 id="rating">calificacion:</h5>
+              <p> {vote_average} </p>
             </ul>
             <Link to="/" className="nav-link active btn btn-dark my-3 col-6 mx-auto">volver al listado</Link>
           </div>

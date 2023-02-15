@@ -1,6 +1,4 @@
-//import { useRef } from "react";
 import { useState, useEffect } from "react";
-import { Link, } from "react-router-dom";
 import Card from "./Card";
 import axios from "axios";
 
@@ -34,26 +32,14 @@ const MovieTotal = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <Link to="/" className="navbar-brand" >MovFlix</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/" className="nav-link" >Home</Link>
-              </li>
-            </ul>
+      <div className="container py-3">
             <form action="" onSubmit={searchMovies} className="d-flex">
               <input className="form-control me-2" type="text" placeholder="Search" aria-label="Search" name="search" onChange={(e) => setText(e.target.value)} id="search" />
-              <button className="btn btn-outline-info" type="submit">search</button>
+              <button className="btn btn-outline-dark" type="submit">search</button>
             </form>
-          </div>
-        </div>
-      </nav>
-      <div className="container">
+            </div>
+     
+      <div className="container ">
         <div className="row g-4 py-5 row-cols-1 row-cols-lg-4">
 
 
