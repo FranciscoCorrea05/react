@@ -35,7 +35,7 @@ class Detail extends Component {
     });
     return (
       <>
-        <div className=" container-fluid row align-middle mx-auto py-3 "  >
+        <div className="container-fluid row align-middle mx-auto py-3 "  >
           <div className="col-12 col-md-4 mx-auto ">
             <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} id="movieImg" className="rounded img-thumbnail" alt="movie" />
           </div>
